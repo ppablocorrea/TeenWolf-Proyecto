@@ -1,0 +1,243 @@
+/* Variables */
+$font-general: HelveticaBlack;
+$color-negro: black;
+$color-azul: #107BBB;
+$sombra-estandar: 2px 3px 7px gray;
+
+/* Imports */
+@import "botones";
+@import "texto";
+
+/* Mixins */
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@font-face {
+    font-family: $font-general;
+    src: url(../fuentes/Helvetica\ .Black\ Oblique.otf);
+}
+
+body{
+    margin: 0px;
+    background-color: $color-negro !important;
+    font-family: $font-general !important;
+}
+
+html{
+    font-size: 16px;
+}
+
+/* Estilos de NavBar */
+
+.navbar-negro{
+    background-color: $color-negro;
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.logo-navbar{
+    width: 57px;
+    margin: -12px 0px;
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.red-social:hover{
+    opacity: 0.7;
+}
+
+.nav-seleccionada{
+    text-decoration: underline !important;
+    text-decoration-color: #6A797E !important;
+    text-decoration-thickness: 2px !important;
+}
+
+/* Fin de Estilos de NavBar */
+
+/* Estilos del Footer */
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    border-top: 0.1px ridge gray;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $color-negro;
+    nav ul {
+        display: flex;
+    }
+    p {
+        font-weight: 100;
+        text-shadow: $sombra-estandar; 
+    }
+}
+
+.footer-item{
+    padding-top: 4px;
+}
+
+/* Fin de Estilos del Footer */
+
+/* Estilos de Temporadas */
+
+.estrella-valoracion{
+    color: blueviolet;
+    font-size: 1.9rem;
+    margin-top: -10px;
+}
+
+/* Fin de Estilos de Temporadas */
+
+/* Estilos de Contacto */
+
+.form-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex; 
+    justify-content: center;
+}
+
+.formulario{
+    @include sizes(80%, 250px);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: white; 
+    border-radius: 15px; 
+    box-shadow: $sombra-estandar;
+    margin-bottom: 75px;
+    margin-top: 25px;
+}
+
+.contenedor-email{
+    @include sizes(80%, 30px);
+    border-radius: 15px;
+    margin-bottom: 23px;
+    border-color: $color-azul;
+}
+
+/* Fin de Estilos de Contacto */
+
+/* Estilos de Reparto */
+
+.caja-texto-imagen{
+    display: none;
+    position: absolute;
+    top: 480px;
+    left: 60px;
+}
+
+.caja-imagen-personaje{
+    border-radius: 15px;
+}
+
+.imagen-personaje{
+    border-radius: 20px;
+}
+
+.personajes{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+.caja-personaje{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #001632;
+    border: 0.2px ridge white;
+    box-shadow: 2px 3px 10px gray;
+}
+
+.link-personaje{
+    text-decoration: none;
+    color: $color-negro;
+}
+
+/* Fin de Estilos de Reparto */
+
+.logo-youtube{
+    margin-top: 1px;
+}
+
+.redes-sociales{
+    float: right;
+}
+
+.caja-flex{
+    display: flex;
+}
+
+.fullHeight {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+@media screen and (max-width: 991px){
+    footer{
+        justify-content: center;
+    }
+    .navbar-hamburguesa{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    }
+    .navbar-espaciado{
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    html{
+        font-size: 12px;
+    }
+    .tamaño-video{
+        @include sizes(100%, 250px);
+    }
+    .video-grande{
+        @include sizes(100%, 250px);
+    }
+    .video-centrado{
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 991px) {
+    html{
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .tamaño-video{
+        @include sizes(100%, 370px);
+    }
+}
+
+@media screen and (min-width:991px) {
+    .video-grande{
+        @include sizes(60%, 400px);
+    }
+    .video-grande-centrado{
+        text-align: center;
+    }
+    .navbar-espaciado{
+        padding-left: 10px;
+    }
+}

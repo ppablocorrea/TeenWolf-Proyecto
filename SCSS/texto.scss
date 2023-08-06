@@ -1,0 +1,84 @@
+.texto-blanco{
+    color: white !important;
+}
+
+.titulo-seccion{
+    font-size: 1.60rem;
+    font-weight: 100;
+    text-shadow: 2px 3px 20px gray;
+    text-align: center;
+}
+
+.texto-centrado{
+    text-align: center;
+}
+
+.texto-navbar{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-shadow: $sombra-estandar;
+    &:hover{
+        color: #8A2BE2;
+    }
+}
+
+.titulo-temporada{
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-shadow: $sombra-estandar;
+    padding-top: 20px;
+}
+
+.texto-temporada{
+    font-size: 1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+}
+
+.texto-valoracion{
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-shadow: $sombra-estandar;
+}
+
+.titulo-contacto{
+    font-size: 1.85rem !important;
+    font-weight: 100;
+    text-shadow: 2px 3px 20px gray;
+    text-align: center;
+    color: $color-azul;
+}
+
+.subtitulo-contacto{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.texto-contacto{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+
+.titulo-seccion-contacto{
+    font-size: 1.85rem;
+    font-weight: 100;
+    text-shadow: 2px 3px 20px gray;
+    text-align: center;
+    color: $color-azul;
+    align-items: center;
+}
+
+.titulo-formulario{
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-shadow: $sombra-estandar;
+}
+
+.texto-imagen{
+    color: white;
+    font-size: 1.2rem;
+}

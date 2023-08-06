@@ -1,0 +1,20 @@
+.boton-contacto{
+    border: outset;
+    border-color: $color-negro;
+}
+
+.boton-personaje{
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 8px;
+    border: groove;
+    height: 35px;
+    color: $color-negro;
+    font-weight: lighter;
+    font-family: $font-general;
+    font-size: 0.8rem;
+    &:hover{
+        background-color:#333847;
+        border-color: #000B11;
+    }
+}
