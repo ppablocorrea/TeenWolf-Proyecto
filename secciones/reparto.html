@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="../images/Teen-Wolf.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     
@@ -22,7 +24,7 @@
             </div>
             
             <div class="collapse navbar-collapse dual-navbar d-lg-flex justify-content-lg-end">
-                <ul style="margin-left: 45px;" class="navbar-nav flex-column flex-lg-row d-lg-flex navbar-espaciado">
+                <ul class="navbar-nav flex-column flex-lg-row d-lg-flex navbar-secciones">
                     <li class="nav-item me-3 me-lg-1">
                         <a class="nav-link texto-navbar" href="../index.html">Inicio</a>
                     </li>
@@ -62,11 +64,11 @@
 
         <section class="container-fluid">
             <div style="margin-top: 20px;" class="row">
-                <div class="col-12">
+                <div class="col-12 animate__animated animate__zoomIn">
                     <h1 class="titulo-seccion texto-blanco"> Conoce a los personajes principales de la serie </h1>
                 </div>
             </div>
-            <div class="row d-flex justify-content-around">
+            <div data-aos-delay="10" data-aos-duration="1500" data-aos="zoom-out" class="row d-flex justify-content-around">
                 <div class="card caja-personaje mt-4" style="width: 16rem; background-color: #001632;">
                     <img class="imagen-personaje pt-2" src="../images/Personajes/Scott Mccall.jpg" alt="Foto de Scott Mccall delante de una ventana grande" height="280px" width="85%">
                     <div class="card-body">
@@ -185,6 +187,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

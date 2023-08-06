@@ -7,6 +7,8 @@
     <link rel="icon" type="image/png" href="../images/Teen-Wolf.png"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Inicio del Navbar -->
@@ -21,7 +23,7 @@
             </div>
             
             <div class="collapse navbar-collapse dual-navbar d-lg-flex justify-content-lg-end">
-                <ul style="margin-left: 45px;" class="navbar-nav flex-column flex-lg-row d-lg-flex navbar-espaciado">
+                <ul class="navbar-nav flex-column flex-lg-row d-lg-flex navbar-secciones">
                     <li class="nav-item me-3 me-lg-1">
                         <a class="nav-link texto-navbar" href="../index.html">Inicio</a>
                     </li>
@@ -61,12 +63,12 @@
 
         <section class="container-fluid">
             <div style="margin-top: 25px;" class="row pb-3">
-                <div class="col-12">
+                <div class="col-12 animate__animated animate__zoomIn">
                     <h1 class="titulo-seccion texto-blanco">Resumen Breve - 6 Temporadas</h1>
                 </div>
             </div>
             <div class="row">
-                <div class="card mb-4" style="max-width: 100%; background-color: #001632">
+                <div data-aos-duration="1300" data-aos="zoom-in" class="card mb-4" style="max-width: 100%; background-color: #001632">
                     <div class="row no-gutters">
                       <div class="col-md-6">
                         <img height="100%" width="100%" src="../images/Temporadas/PrimeraTemporada.jpg" class="card-img" alt="Foto de los personajes principales de Teen Wolf muy jovenes">
@@ -81,7 +83,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card mb-3" style="max-width: 100%; background-color: black">
+                <div data-aos-duration="1300" data-aos="zoom-in" class="card mb-3" style="max-width: 100%; background-color: black">
                     <div class="row no-gutters">
                         <div class="col-md-6 order-lg-2">
                             <img height="100%" width="100%" src="../images/Temporadas/SegundaTemporada.jpg" class="card-img" alt="Foto de Scott, Stiles y Allison en una batalla">
@@ -96,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-4" style="max-width: 100%; background-color: #001632">
+                <div data-aos-duration="1300" data-aos="zoom-in" class="card mb-4" style="max-width: 100%; background-color: #001632">
                     <div class="row no-gutters">
                       <div class="col-md-6">
                         <img height="100%" width="100%" src="../images/Temporadas/TerceraTemporada.jpg" alt="Foto de los personajes principales de Teen Wolf delante de una ventana grande" class="card-img">
@@ -111,7 +113,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card mb-3" style="max-width: 100%; background-color: black">
+                <div data-aos-duration="1300" data-aos="zoom-in" class="card mb-3" style="max-width: 100%; background-color: black">
                     <div class="row no-gutters">
                         <div class="col-md-6 order-lg-2">
                             <img height="100%" width="100%" src="../images/Temporadas/CuartaTemporada.jpg" alt="Foto de los personajes principales de Teen Wolf en un tunel misterioso" class="card-img">
@@ -126,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-4" style="max-width: 100%; background-color: #001632">
+                <div data-aos-duration="1300" data-aos="zoom-in" class="card mb-4" style="max-width: 100%; background-color: #001632">
                     <div class="row no-gutters">
                       <div class="col-md-6">
                         <img height="100%" width="100%" src="../images/Temporadas/QuintaTemporada.jpg" alt="Foto de los personajes principales de Teen Wolf en las tinieblas" class="card-img">
@@ -141,7 +143,7 @@
                       </div>
                     </div>
                 </div>
-                <div class="card mb-5 pb-4" style="max-width: 100%; background-color: black">
+                <div data-aos-duration="1300" data-aos="zoom-in" class="card mb-5 pb-4" style="max-width: 100%; background-color: black">
                     <div class="row no-gutters">
                         <div class="col-md-6 order-lg-2">
                             <img height="100%" width="100%" src="../images/Temporadas/SextaTemporada.jpeg" alt="Foto de Scott y su manada" class="card-img">
@@ -191,6 +193,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

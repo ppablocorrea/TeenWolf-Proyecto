@@ -20,6 +20,8 @@
     text-shadow: $sombra-estandar;
     &:hover{
         color: #8A2BE2;
+        // transform: rotate(360deg);
+        transition: color 0.7s;
     }
 }
 

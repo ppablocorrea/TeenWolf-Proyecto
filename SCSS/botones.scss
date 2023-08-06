@@ -16,5 +16,6 @@
     &:hover{
         background-color:#333847;
         border-color: #000B11;
+        transition: background-color 0.5s, border-color 0.5s;
     }
 }

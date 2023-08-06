@@ -20,6 +20,7 @@
 .boton-personaje:hover {
   background-color: #333847;
   border-color: #000B11;
+  transition: background-color 0.5s, border-color 0.5s;
 }
 
 .texto-blanco {
@@ -45,6 +46,7 @@
 }
 .texto-navbar:hover {
   color: #8A2BE2;
+  transition: color 0.7s;
 }
 
 .titulo-temporada {
@@ -137,10 +139,14 @@ html {
 }
 .logo-navbar:hover {
   opacity: 0.7;
+  transform: rotate(360deg);
+  transition: transform 0.9s;
 }
 
 .red-social:hover {
   opacity: 0.7;
+  transform: rotate(360deg);
+  transition: transform 1s;
 }
 
 .nav-seleccionada {
@@ -286,6 +292,9 @@ footer p {
   .navbar-espaciado {
     padding-left: 0px;
   }
+  .navbar-secciones {
+    padding-left: 0px;
+  }
 }
 @media screen and (max-width: 600px) {
   html {
@@ -323,7 +332,10 @@ footer p {
     text-align: center;
   }
   .navbar-espaciado {
-    padding-left: 10px;
+    padding-left: 30px;
+  }
+  .navbar-secciones {
+    padding-left: 52px;
   }
 }
 
