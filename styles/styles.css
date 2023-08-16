@@ -5,6 +5,14 @@
   border: outset;
   border-color: black;
 }
+.boton-contacto:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s;
+}
+.boton-contacto:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.5s;
+}
 
 .boton-personaje {
   margin-top: 12px;
@@ -20,7 +28,12 @@
 .boton-personaje:hover {
   background-color: #333847;
   border-color: #000B11;
-  transition: background-color 0.5s, border-color 0.5s;
+  transform: scale(1.09);
+  transition: background-color 0.5s, border-color 0.5s, transform 0.5s;
+}
+.boton-personaje:not(:hover) {
+  transform: scale(1);
+  transition: transform 0.5s;
 }
 
 .texto-blanco {
@@ -46,7 +59,8 @@
 }
 .texto-navbar:hover {
   color: #8A2BE2;
-  transition: color 0.7s;
+  transform: scale(1.15);
+  transition: color 0.5s, transform 0.5s;
 }
 
 .titulo-temporada {

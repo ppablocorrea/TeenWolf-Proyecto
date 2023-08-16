@@ -1,6 +1,14 @@
 .boton-contacto{
     border: outset;
     border-color: $color-negro;
+    &:hover{
+        transform: scale(1.05);
+        transition: transform 0.5s;
+    }
+    &:not(:hover){
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
 }
 
 .boton-personaje{
@@ -16,6 +24,12 @@
     &:hover{
         background-color:#333847;
         border-color: #000B11;
-        transition: background-color 0.5s, border-color 0.5s;
+        transform: scale(1.09);
+        transition: background-color 0.5s, border-color 0.5s, transform 0.5s;
+    }
+    &:not(:hover){
+        transform: scale(1);
+        transition: transform 0.5s;
     }
 }
+
