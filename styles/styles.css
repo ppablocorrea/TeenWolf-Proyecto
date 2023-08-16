@@ -62,6 +62,11 @@
   transform: scale(1.15);
   transition: color 0.5s, transform 0.5s;
 }
+.texto-navbar:not(:hover) {
+  color: white;
+  transform: scale(1);
+  transition: color 0.5s, transform 0.5s;
+}
 
 .titulo-temporada {
   font-size: 1.3rem;
