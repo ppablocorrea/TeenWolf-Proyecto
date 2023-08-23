@@ -117,6 +117,9 @@ footer{
     .tamaño-video{
         @include sizes(100%, 370px);
     }
+    .footer-item{
+        padding-right: 23px;
+    }   
 }
 
 @media screen and (min-width:991px) {
