@@ -329,6 +329,9 @@ footer p {
   .video-centrado {
     text-align: center;
   }
+  .footer-item {
+    font-size: 10px;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 991px) {
   html {
