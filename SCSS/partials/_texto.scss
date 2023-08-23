@@ -3,10 +3,14 @@
 }
 
 .titulo-seccion{
-    font-size: 1.60rem;
-    font-weight: 100;
-    text-shadow: 2px 3px 20px gray;
-    text-align: center;
+    font: {
+        size: 1.60rem;
+        weight: 100;
+    }
+    text: {
+        shadow: 2px 3px 20px gray;
+        align: center;
+    }
 }
 
 .texto-centrado{
@@ -31,29 +35,39 @@
 }
 
 .titulo-temporada{
-    font-size: 1.3rem;
-    font-weight: 100;
+    font: {
+        size: 1.3rem;
+        weight: 100;
+    }
     text-shadow: $sombra-estandar;
     padding-top: 20px;
 }
 
 .texto-temporada{
-    font-size: 1rem;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 100;
+    font: {
+        size: 1rem;
+        family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        weight: 100;
+    }
 }
 
 .texto-valoracion{
-    font-size: 1.1rem;
-    font-weight: 100;
+    font: {
+        size: 1.1rem;
+        weight: 100;
+    }
     text-shadow: $sombra-estandar;
 }
 
 .titulo-contacto{
-    font-size: 1.85rem !important;
-    font-weight: 100;
-    text-shadow: 2px 3px 20px gray;
-    text-align: center;
+    font: {
+        size: 1.85rem !important;
+        weight: 100;
+    }
+    text: {
+        shadow: 2px 3px 20px gray;
+        align: center;
+    }
     color: $color-azul;
 }
 
@@ -70,18 +84,24 @@
 }
 
 .titulo-seccion-contacto{
-    font-size: 1.85rem;
-    font-weight: 100;
-    text-shadow: 2px 3px 20px gray;
-    text-align: center;
+    font: {
+        size: 1.85rem;
+        weight: 100;
+    }
+    text: {
+        shadow: 2px 3px 20px gray;
+        align: center;
+    }
     color: $color-azul;
     align-items: center;
 }
 
 .titulo-formulario{
     font-size: 1.5rem;
-    margin-top: 0px;
-    margin-bottom: 20px;
+    margin: {
+        top: 0px;
+        bottom: 20px;
+    }
     text-shadow: $sombra-estandar;
 }
 

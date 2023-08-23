@@ -1,0 +1,42 @@
+/* Estilos de Reparto */
+
+.caja-texto-imagen{
+    display: none;
+    position: absolute;
+    top: 480px;
+    left: 60px;
+}
+
+.caja-imagen-personaje{
+    border-radius: 15px;
+}
+
+.imagen-personaje{
+    border-radius: 20px;
+}
+
+.personajes{
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-around;
+}
+
+.caja-personaje{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #001632;
+    border: 0.2px ridge white;
+    box-shadow: 2px 3px 10px gray;
+}
+
+.link-personaje{
+    text-decoration: none;
+    color: $color-negro;
+}
+
+/* Fin de Estilos de Reparto */

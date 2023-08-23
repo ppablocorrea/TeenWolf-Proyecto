@@ -1,6 +1,38 @@
 @charset "UTF-8";
-/* Variables */
+/* Mixins */
 /* Imports */
+/* Variables */ /* Estilos de NavBar */
+.navbar-negro {
+  background-color: black;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.logo-navbar {
+  width: 57px;
+  margin: -12px 0px;
+}
+.logo-navbar:hover {
+  opacity: 0.7;
+  transform: rotate(360deg);
+  transition: transform 0.9s;
+}
+
+.red-social:hover {
+  opacity: 0.7;
+  transform: rotate(360deg);
+  transition: transform 1s;
+}
+
+.nav-seleccionada {
+  text-decoration: underline !important;
+  text-decoration-color: #6A797E !important;
+  text-decoration-thickness: 2px !important;
+}
+
+/* Fin de Estilos de NavBar */
 .boton-contacto {
   border: outset;
   border-color: black;
@@ -128,84 +160,14 @@
   font-size: 1.2rem;
 }
 
-/* Mixins */
-@font-face {
-  font-family: HelveticaBlack;
-  src: url(../fuentes/Helvetica\ .Black\ Oblique.otf);
-}
-body {
-  margin: 0px;
-  background-color: black !important;
-  font-family: HelveticaBlack !important;
-}
-
-html {
-  font-size: 16px;
-}
-
-/* Estilos de NavBar */
-.navbar-negro {
-  background-color: black;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-
-.logo-navbar {
-  width: 57px;
-  margin: -12px 0px;
-}
-.logo-navbar:hover {
-  opacity: 0.7;
-  transform: rotate(360deg);
-  transition: transform 0.9s;
-}
-
-.red-social:hover {
-  opacity: 0.7;
-  transform: rotate(360deg);
-  transition: transform 1s;
-}
-
-.nav-seleccionada {
-  text-decoration: underline !important;
-  text-decoration-color: #6A797E !important;
-  text-decoration-thickness: 2px !important;
-}
-
-/* Fin de Estilos de NavBar */
-/* Estilos del Footer */
-footer {
-  display: flex;
-  justify-content: space-between;
-  border-top: 0.1px ridge gray;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-}
-footer nav ul {
-  display: flex;
-}
-footer p {
-  font-weight: 100;
-  text-shadow: 2px 3px 7px gray;
-}
-
-.footer-item {
-  padding-top: 4px;
-}
-
-/* Fin de Estilos del Footer */
-/* Estilos de Temporadas */
+/* Estilos de Resumen */
 .estrella-valoracion {
   color: blueviolet;
   font-size: 1.9rem;
   margin-top: -10px;
 }
 
-/* Fin de Estilos de Temporadas */
+/* Fin de Estilos de Resumen */
 /* Estilos de Contacto */
 .form-contacto {
   display: flex;
@@ -281,6 +243,43 @@ footer p {
 }
 
 /* Fin de Estilos de Reparto */
+@font-face {
+  font-family: HelveticaBlack;
+  src: url(../fuentes/Helvetica\ .Black\ Oblique.otf);
+}
+body {
+  margin: 0px;
+  background-color: black !important;
+  font-family: HelveticaBlack !important;
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Estilos del Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 0.1px ridge gray;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+footer nav ul {
+  display: flex;
+}
+footer p {
+  font-weight: 100;
+  text-shadow: 2px 3px 7px gray;
+}
+
+.footer-item {
+  padding-top: 4px;
+}
+
+/* Fin de Estilos del Footer */
 .logo-youtube {
   margin-top: 1px;
 }

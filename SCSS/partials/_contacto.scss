@@ -1,0 +1,35 @@
+/* Estilos de Contacto */
+
+.form-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+.form-container{
+    display: flex; 
+    justify-content: center;
+}
+
+.formulario{
+    @include sizes(80%, 250px);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: white; 
+    border-radius: 15px; 
+    box-shadow: $sombra-estandar;
+    margin: {
+        bottom: 75px;
+        top: 25px;
+    }
+}
+
+.contenedor-email{
+    @include sizes(80%, 30px);
+    border-radius: 15px;
+    margin-bottom: 23px;
+    border-color: $color-azul;
+}
+
+/* Fin de Estilos de Contacto */
